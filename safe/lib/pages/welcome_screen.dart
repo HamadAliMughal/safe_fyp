@@ -20,7 +20,7 @@ class WelcomeScreen extends StatelessWidget {
             top: 0,
             child: Image.asset(
               'assets/upr_corner.png',
-              width: screenSize.width * 0.3, // Adjust image size based on screen width
+              width: screenSize.width * 0.12, // Adjust image size based on screen width
             ),
           ),
 
@@ -30,7 +30,7 @@ class WelcomeScreen extends StatelessWidget {
             right: -15,
             child: Image.asset(
               'assets/btm_corner.png',
-              width: screenSize.width * 0.3, // Adjust image size based on screen width
+              width: screenSize.width * 0.14, // Adjust image size based on screen width
             ),
           ),
 
@@ -49,7 +49,7 @@ class WelcomeScreen extends StatelessWidget {
                 const SizedBox(height: 50), // Use fractions for spacing
                 Image.asset(
                   'assets/welcome.png',
-                  width: screenSize.width * 0.8, // Adjust image size based on screen width
+                  width: screenSize.width * 0.6, // Adjust image size based on screen width
                 ),
                 const SizedBox(height: 100), // Use fractions for spacing
                 Column(
@@ -67,7 +67,7 @@ class WelcomeScreen extends StatelessWidget {
                         ),
                       ),
                       child: SizedBox(
-                        width: screenSize.width * 0.8, // Adjust button width based on screen width
+                        width: screenSize.width * 0.7, // Adjust button width based on screen width
                         child: const Align(
                           alignment: Alignment.center,
                           child: Text(
@@ -90,7 +90,7 @@ class WelcomeScreen extends StatelessWidget {
                         ),
                       ),
                       child: SizedBox(
-                        width: screenSize.width * 0.8, // Adjust button width based on screen width
+                        width: screenSize.width * 0.7, // Adjust button width based on screen width
                         child: const Align(
                           alignment: Alignment.center,
                           child: Text(

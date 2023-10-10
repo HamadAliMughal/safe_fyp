@@ -63,12 +63,12 @@ class LoginScreen extends StatelessWidget {
                               ),
                             ),
                             Positioned(
-                              right: -14,
+                              right: 0,
                               top: 0,
                               child: Image.asset(
                                 'assets/welcome.png',
-                                width: 180,
-                                height: 180,
+                                width: 100,
+                                height: 100,
                               ),
                             ),
                           ],
@@ -147,7 +147,7 @@ class LoginScreen extends StatelessWidget {
                     ElevatedButton(
                       onPressed: () {
                         // Navigate to "Sign In" page
-                        Navigator.pushNamed(context, '/menu');
+                        Navigator.pushNamed(context, '/uploadfiles');
                       },
                       style: ElevatedButton.styleFrom(
                         primary: const Color(0XFF6096B4), // Change button color
@@ -170,10 +170,11 @@ class LoginScreen extends StatelessWidget {
                            Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
+                  
                   const Text(
-                    "Do not have a account.. No worries Just ",
+                    "Do not have a account.No worries Just ",
                     style: TextStyle(
-                      fontSize: 16,
+                      fontSize: 12,
                       color: Colors.white,
                     ),
                   ),
@@ -185,7 +186,7 @@ class LoginScreen extends StatelessWidget {
                     child: const Text(
                       "Signup",
                       style: TextStyle(
-                        fontSize: 16,
+                        fontSize: 12,
                         fontWeight: FontWeight.bold,
                         color: Color.fromARGB(255, 0, 0, 0), // Customize the text color
                       ),

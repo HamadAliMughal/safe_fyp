@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 
 class SplashScreen extends StatefulWidget {
-  const SplashScreen({super.key});
+  const SplashScreen({Key? key}) : super(key: key);
 
   @override
-  // ignore: library_private_types_in_public_api
   _SplashScreenState createState() => _SplashScreenState();
 }
 
@@ -29,26 +28,29 @@ class _SplashScreenState extends State<SplashScreen> {
 
   @override
   Widget build(BuildContext context) {
+    final screenHeight = MediaQuery.of(context).size.height;
+    final screenWidth = MediaQuery.of(context).size.width;
+
     return Scaffold(
       backgroundColor: const Color(0XFFEEE9DA),
       body: Stack(
         children: [
           Positioned(
-            top: 1,
-            left: -15,
+            top: screenHeight * 0.01,
+            left: -screenWidth * 0.015,
             child: Image.asset(
               'assets/upr_corner.png',
-              width: 100,
-              height: 100,
+              width: screenWidth * 0.1,
+              height: screenHeight * 0.1,
             ),
           ),
           Positioned(
-            bottom: -1,
-            right: -15,
+            bottom: -screenHeight * 0.01,
+            right: -screenWidth * 0.015,
             child: Image.asset(
               'assets/btm_corner.png',
-              width: 100,
-              height: 100,
+              width: screenWidth * 0.1,
+              height: screenHeight * 0.1,
             ),
           ),
           Center(
@@ -57,8 +59,8 @@ class _SplashScreenState extends State<SplashScreen> {
               duration: const Duration(seconds: 1),
               child: Image.asset(
                 'assets/safe_logo.png',
-                width: 250,
-                height: 250,
+                width: screenWidth * 0.5,
+                height: screenHeight * 0.5,
               ),
             ),
           ),

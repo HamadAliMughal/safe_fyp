@@ -29,8 +29,8 @@ class SignupScreen extends StatelessWidget {
               top: -30,
               child: Image.asset(
                 'assets/safe_logo.png',
-                width: 200,
-                height: 200,
+                width: 150,
+                height: 150,
               ),
             ),
             Positioned(
@@ -57,7 +57,7 @@ class SignupScreen extends StatelessWidget {
                       const Text(
                         'Sign Up',
                         style: TextStyle(
-                          fontSize: 24,
+                          fontSize: 20,
                           fontWeight: FontWeight.bold,
                           color: Color.fromARGB(255, 0, 0, 0), // Text color
                         ),
@@ -66,21 +66,21 @@ class SignupScreen extends StatelessWidget {
                       Center(
                         child: Image.asset(
                           'assets/signup.png',
-                          width: 150,
-                          height: 150,
+                          width: 100,
+                          height: 100,
                         ),
                       ),
-                      const SizedBox(height: 20),
+                      const SizedBox(height: 10),
                       const TextFieldWithIcon(Icons.account_circle, 'Name'),
-                      const SizedBox(height: 20),
+                      const SizedBox(height: 10),
                        const TextFieldWithIcon(Icons.phone, 'Phone Number'),
-                      const SizedBox(height: 20),
+                      const SizedBox(height: 10),
                        const TextFieldWithIcon(FontAwesomeIcons.addressBook, 'Address'),
-                      const SizedBox(height: 20),
+                      const SizedBox(height: 10),
                       const TextFieldWithIcon(Icons.email, 'Email'),
-                      const SizedBox(height: 20),
+                      const SizedBox(height: 10),
                       const TextFieldWithIcon(Icons.lock, 'Password'),
-                      const SizedBox(height: 20),
+                      const SizedBox(height: 10),
                       ElevatedButton(
                         onPressed: () {
                           // Navigate to "Sign In" page
